@@ -1,0 +1,126 @@
+/* Typography */
+
+html {
+	font-family: 'Rubik', sans-serif;
+	background: #E8EAF6;
+	color: #303F9F;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+	
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 768px) {
+	main > .projects { 
+		text-align: left;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+.icons-social i {
+	font-size: 3em;
+}
+
+/* Custom Styles */
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-width: 600px;
+	margin: 0 auto;
+	justify-content: center;
+	padding: 0 30px;
+	text-align: center;
+}
+
+main > .intro {
+	font-family: 'Rubik', sans-serif;
+	font-size: 3.75em;
+	font-weight: 900;
+}
+
+main > .tagline {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+}
+
+main > .projects {
+	margin: 1.5rem 0;
+}
+
+main > .projects p {
+	/* text-align: center; */
+	margin-bottom: 1.5rem;
+}
+main > .projects a {
+	color: inherit;
+	/* display: block; */
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 1px solid #303F9F;
+}
+
+main > .projects a:hover {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+	background-position: bottom;
+	background-repeat: repeat-x;
+	background-size: 20%;
+	border-bottom: 0;
+	padding-bottom: .3em;
+	text-decoration: none;
+}
+  
+
+.icons-social {
+	text-align: center;
+}
+
+.icons-social i {
+	padding: 10px;
+}
+
+.icons-social a {
+	color: #303F9F;
+}
+
+.icons-social a svg path{
+	fill: #303F9F;
+}
+
+
+ul li{
+	display: block;
+	margin: 0.5rem 0;
+}
+/* 
+ul li:first-child::before{
+	content: '';
+} */
+
+ul li::before {
+	content: "📌";
+	display: inline-block;
+	margin-right: 0.2rem;
+}
